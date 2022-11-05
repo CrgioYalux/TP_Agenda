@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Clase 17</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="./style.css" rel="stylesheet">
+        <script src="./script.js" defer></script>
+    </head>
+    <body>
+        <main>
+            <form id="addContactForm" class="add-contact-form">
+                <div class="form_inputs-container">
+                    <label for="nameInput">
+                        <span>Nombre</span>
+                        <input 
+                            type="text"
+                            id="nameInput"
+                            required
+                        />
+                    </label>
+                    <label for="telInput">
+                        <span>Teléfono</span>
+                        <input
+                            type="tel"
+                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"
+                            placeholder="ej: 155-567-890"
+                            id="telInput"
+                            required
+                        />
+                    </label>
+                </div>
+                <button type="submit" id="submitBT">
+                    Agregar
+                </button>
+            </form>
+            <ul id="contactsContainer" class="contact_list">
+            </ul>
+        </main>
+    </body>
+</html>
